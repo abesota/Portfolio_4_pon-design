@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONTACT - お問い合わせ｜PON DESIGN</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/ress.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/include.js"></script>
+</head>
+<body>
+  <header class="another_header">
+    <div id="header"></div>
+    <div id="target"></div>
+    <h2 class="cap_h2">CONTACT</h2>
+    <p class="cap_h2_smp">お問い合わせ</p>
+    <div id="sc_target"></div>
+  </header>
+
+  <main>
+    <!-- パンくずリスト -->
+    <div class="breadcrumbs">
+        <a href="index.html">HOME</a> <span> > </span>  CONTACT
+    </div>
+    <!-- パンくずリスト -->
+    
+    <div class="contact_wrap">
+      <p>Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。</p>
+      
+      <section class="c_wrap_main">
+        <div class="c_content">
+          <form action="contact.html">
+            <div class="c_item">
+              <h4>お問い合わせの種別</h4>
+              <label>
+                <input type="radio" name="Contents" value="お仕事のご依頼・ご相談" checked class="radio_mb">
+                 お仕事のご依頼・ご相談
+              </label>
+              <label>
+                <input type="radio" name="Contents" value="お見積もりのご依頼" class="con_radio radio_mb">
+                 お見積もりのご依頼
+              </label>
+              <label>
+                <input type="radio" name="Contents" value="お仕事のご依頼・ご相談" class="con_radio radio_mb">
+                 採用について <br>
+              </label>
+              <label>
+                <input type="radio" name="Contents" value="その他" class="radio_mb">
+                 その他
+              </label>
+            </div>
+  
+            <label for="name">
+              <h4>お名前 <span class="req">*必須</span></h4>
+              <input type="text" name="name" id="name" class="txt_frame" required>
+            </label>
+            <label for="company">
+              <h4>会社名 <span class="req">*必須</span></h4>
+              <input type="text" name="company" id="company" class="txt_frame" required>
+            </label>
+            <label for="email">
+              <h4>メールアドレス <span class="req">*必須</span></h4>
+              <input type="email" name="email" id="email" class="txt_frame" required>
+            </label>
+            <label for="tel">
+              <h4>電話番号 <span class="tel_sm">（半角数字ハイフンなし）</span></h4>
+              <input type="tel" name="tel" id="tel" class="tel_frame">
+            </label>
+            <label for="contact">
+              <h4>お問い合わせ内容</h4>
+              <textarea name="contact" id="contact" rows="10" placeholder="お問い合わせ内容を具体的にご記入くださいませ。" class="con_textarea"></textarea>
+            </label>
+            <div class="c_item">
+              <h4>PON DESIGNをどちらでお知りになりましたか？ <span class="req">*必須</span></h4>
+              <select required class="select">
+                <option value="1">選択してください</option>
+                <option value="2">Google/Yahoo検索</option>
+                <option value="3">SNS</option>
+                <option value="4">ブログ</option>
+                <option value="5">友人や知人</option>
+                <option value="6">その他</option>
+              </select>
+            </div>
+            <div class="send">
+              <a href="contact.html"><button type="submit" class="more_btn">送信する</button></a>
+            </div>
+          </form>
+        </div>  
+      </section>
+    </div>
+
+    <div id="main_contact"></div>
+  </main>
+
+  <div id="footer"></div>
+
+  <a href="#" id="top"><i class="fa-solid fa-arrow-up"></i></a>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
